@@ -1,0 +1,11 @@
+{
+    "solidity.compileUsingRemoteVersion": "v0.8.4+commit.c7e474f243fa6bd6d6c172118b95d52113b5fbad",
+    "mochaExplorer.files": "test/**/*.{j,t}s",
+    "solidity.packageDefaultDependenciesContractsDirectory": "",
+    "solidity.packageDefaultDependenciesDirectory": "node_modules",
+    "cSpell.words": [
+        "Datas",
+        "TOKENA",
+        "TOKENSMINTED"
+    ]
+}

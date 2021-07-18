@@ -1,0 +1,6 @@
+node_modules
+artifacts
+cache
+typechain
+hardhat.config.secrets.ts
+coverage/
