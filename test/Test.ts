@@ -1,5 +1,5 @@
 import * as chai from 'chai'
-import { BigNumber, ContractTransaction } from 'ethers'
+import { BigNumber, ContractReceipt, ContractTransaction } from 'ethers'
 import { ethers } from 'hardhat'
 import { ContractA, ContractAFactory } from '../typechain'
 
@@ -22,6 +22,11 @@ describe("Example test", function () {
         })
 
         const contractTx: ContractTransaction = await contractA.mint(123)
-        await contractTx.wait()
+        const contractReceipt: ContractReceipt = await contractTx.wait()
+
+        for (const event of contractReceipt.events!) {
+            console.log(JSON.stringify(event))
+        }
+
     });
 });
